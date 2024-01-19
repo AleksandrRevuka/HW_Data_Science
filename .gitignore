@@ -3,3 +3,8 @@ dogs-vs-cats
 data_cat_dog.py
 cat_dog.ipynb
 data_c_d
+brnn.ipynb
+dbrnn.ipynb
+gru.ipynb
+lstm.ipynb
+rnn.ipynb

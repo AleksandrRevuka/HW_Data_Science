@@ -8,3 +8,6 @@ dbrnn.ipynb
 gru.ipynb
 lstm.ipynb
 rnn.ipynb
+
+.vscode/
+settings.json

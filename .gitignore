@@ -8,6 +8,9 @@ dbrnn.ipynb
 gru.ipynb
 lstm.ipynb
 rnn.ipynb
-
+models
 .vscode/
 settings.json
+cat_dog
+backup
+__pycache__

@@ -14,3 +14,5 @@ settings.json
 cat_dog
 backup
 __pycache__
+log
+models/model_cifar10_cat_dog_vgg4_20240218-144332.h5

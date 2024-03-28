@@ -16,3 +16,9 @@ backup
 __pycache__
 log
 models/model_cifar10_cat_dog_vgg4_20240218-144332.h5
+
+CGS-test-task/league_data.csv
+CGS-test-task/match_data.csv
+CGS-test-task/player_attributes.csv
+CGS-test-task/player_data.csv
+CGS-test-task/team_data.csv

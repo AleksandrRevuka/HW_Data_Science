@@ -8,6 +8,10 @@ dbrnn.ipynb
 gru.ipynb
 lstm.ipynb
 rnn.ipynb
-
+dataset
 .vscode/
 settings.json
+models
+CGS-test-task
+cat_dog
+__pycache__

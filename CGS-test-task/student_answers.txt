@@ -1,0 +1,38 @@
+5925
+434
+          id  player_api_id         player_name  player_fifa_api_id  \
+10297  10313          27313           Tim Wiese               53012   
+5901    5908         148325    Kristof van Hout              185306   
+4879    4884           5044    Jeroen Verhoeven              137692   
+4408    4412          27267      Ishmael Miller              169725   
+6762    6772          30669    Marcus Hahnemann               53785   
+5969    5976         210822     Lars Unnerstall              199833   
+1819    1822          19020   Christopher Samba               46590   
+1595    1598         101584              Cassio              167958   
+10816  10832          93450  Wojciech Kaczmarek              188920   
+3026    3030          33060      Enoch Showunmi              157589   
+
+        birthday  height  weight  
+10297 1981-12-17  193.04     243  
+5901  1987-02-09  208.28     243  
+4879  1980-04-30  198.12     227  
+4408  1987-03-05  193.04     225  
+6762  1972-06-15  190.50     220  
+5969  1990-07-20  198.12     220  
+1819  1984-03-28  193.04     220  
+1595  1987-06-06  195.58     220  
+10816 1983-03-29  200.66     218  
+3026  1982-04-21  195.58     218  
+[(1980, 434), (1981, 475), (1982, 487), (1983, 541), (1984, 607), (1985, 593), (1986, 710), (1987, 722), (1988, 802), (1989, 723), (1990, 696)]
+182.118 5.361
+Sunday
+   league_id  country_id      league_name  matches_count
+9      21518       21518  Spain LIGA BBVA           3040
+Steve Mandanda
+gk_positioning,gk_reflexes;gk_handling,gk_positioning;gk_handling,gk_reflexes;standing_tackle,sliding_tackle;marking,standing_tackle;
+[('Iago Aspas', 46.32493928760188), ('Dusan Tadic', 61.7008914036094), ('Scott Sinclair', 64.97691897897283), ('Andrey Arshavin', 69.4118145563131), ('Alexandr Kerzhakov', 71.57513534740957)]
+17
+34
+20
+Real Madrid CF
+Liverpool

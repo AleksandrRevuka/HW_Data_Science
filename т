@@ -1,0 +1,18 @@
+
+PS C:\Users\00090> pip install docker
+Requirement already satisfied: docker in c:\users\00090\appdata\local\programs\python\python311\lib\site-packages (7.0.0)
+Requirement already satisfied: packaging>=14.0 in c:\users\00090\appdata\local\programs\python\python311\lib\site-packages (from docker) (24.0)
+Requirement already satisfied: requests>=2.26.0 in c:\users\00090\appdata\local\programs\python\python311\lib\site-packages (from docker) (2.32.1)
+Requirement already satisfied: urllib3>=1.26.0 in c:\users\00090\appdata\local\programs\python\python311\lib\site-packages (from docker) (2.2.1)
+Requirement already satisfied: pywin32>=304 in c:\users\00090\appdata\local\programs\python\python311\lib\site-packages (from docker) (306)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\00090\appdata\local\programs\python\python311\lib\site-packages (from requests>=2.26.0->docker) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\00090\appdata\local\programs\python\python311\lib\site-packages (from requests>=2.26.0->docker) (3.7)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\00090\appdata\local\programs\python\python311\lib\site-packages (from requests>=2.26.0->docker) (2024.2.2)
+PS C:\Users\00090> docker -h
+docker : Имя "docker" не распознано как имя командлета, функции, файла сценария или выполняемой программы. Проверьте пр
+авильность написания имени, а также наличие и правильность пути, после чего повторите попытку.
+строка:1 знак:1
++ docker -h
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (docker:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException

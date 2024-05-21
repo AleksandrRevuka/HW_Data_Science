@@ -1,18 +1,135 @@
+PS C:\Users\00090> & "C:\Program Files\Docker\Docker\resources\com.docker.diagnose.exe" check
+Starting diagnostics
 
-PS C:\Users\00090> pip install docker
-Requirement already satisfied: docker in c:\users\00090\appdata\local\programs\python\python311\lib\site-packages (7.0.0)
-Requirement already satisfied: packaging>=14.0 in c:\users\00090\appdata\local\programs\python\python311\lib\site-packages (from docker) (24.0)
-Requirement already satisfied: requests>=2.26.0 in c:\users\00090\appdata\local\programs\python\python311\lib\site-packages (from docker) (2.32.1)
-Requirement already satisfied: urllib3>=1.26.0 in c:\users\00090\appdata\local\programs\python\python311\lib\site-packages (from docker) (2.2.1)
-Requirement already satisfied: pywin32>=304 in c:\users\00090\appdata\local\programs\python\python311\lib\site-packages (from docker) (306)
-Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\00090\appdata\local\programs\python\python311\lib\site-packages (from requests>=2.26.0->docker) (3.3.2)
-Requirement already satisfied: idna<4,>=2.5 in c:\users\00090\appdata\local\programs\python\python311\lib\site-packages (from requests>=2.26.0->docker) (3.7)
-Requirement already satisfied: certifi>=2017.4.17 in c:\users\00090\appdata\local\programs\python\python311\lib\site-packages (from requests>=2.26.0->docker) (2024.2.2)
-PS C:\Users\00090> docker -h
-docker : Имя "docker" не распознано как имя командлета, функции, файла сценария или выполняемой программы. Проверьте пр
-авильность написания имени, а также наличие и правильность пути, после чего повторите попытку.
-строка:1 знак:1
-+ docker -h
-+ ~~~~~~
-    + CategoryInfo          : ObjectNotFound: (docker:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
+[2024-05-21T11:29:05.581097500Z][com.docker.diagnose.exe.ipc] 641971bf-diagnose -> \\.\pipe\dockerBackendApiServer BackendAPI
+[2024-05-21T11:29:05.584862700Z][com.docker.diagnose.exe.ipc] (d2b1f454) 641971bf-diagnose C->S BackendAPI POST /idle/make-busy
+[2024-05-21T11:29:05.585411900Z][com.docker.diagnose.exe.ipc][W] (d2b1f454) 641971bf-diagnose C<-S NoResponse POST /idle/make-busy (549.2µs): Post "http://ipc/idle/make-busy": open \\.\pipe\dockerBackendApiServer: The system cannot find the file specified.
+[2024-05-21T11:29:06.588873200Z][com.docker.diagnose.exe.ipc] (85420268) 641971bf-diagnose C->S BackendAPI GET /idle
+[2024-05-21T11:29:06.590081800Z][com.docker.diagnose.exe.ipc][W] (85420268) 641971bf-diagnose C<-S NoResponse GET /idle (1.2086ms): Get "http://ipc/idle": open \\.\pipe\dockerBackendApiServer: The system cannot find the file specified.
+[PASS] DD0027: is there available disk space on the host?
+[SKIP] DD0028: is there available VM disk space?
+[SKIP] DD0002: does the bootloader have virtualization enabled?
+[SKIP] DD0018: does the host support virtualization?
+[FAIL] DD0001: is the application running? Docker is not running
+[SKIP] DD0022: is the Virtual Machine Platform Windows Feature enabled?
+[SKIP] DD0021: is the WSL 2 Windows Feature enabled?
+[PASS] DD0024: is WSL installed?
+[FAIL] DD0025: are WSL distros installed? WSL Distribution docker-desktop is missing
+[PASS] DD0026: is the WSL LxssManager service running?
+[FAIL] DD0029: is the WSL 2 Linux filesystem corrupt? prereq failed: are WSL distros installed?
+[FAIL] DD0035: is the VM time synchronized? prereq failed: are WSL distros installed?
+[FAIL] DD0017: can a VM be started? prereq failed: are WSL distros installed?
+[FAIL] DD0016: is the LinuxKit VM running? prereq failed: is the application running?
+[FAIL] DD0004: is the Docker engine running? prereq failed: is the LinuxKit VM running?
+[PASS] DD0015: are the binary symlinks installed?
+[FAIL] DD0031: does the Docker API work? prereq failed: is the Docker engine running?
+[PASS] DD0013: is the $PATH ok?
+[FAIL] DD0003: is the Docker CLI working? prereq failed: is the Docker engine running?
+[FAIL] DD0005: is the user in the docker-users group? prereq failed: is the LinuxKit VM running?
+[FAIL] DD0038: is the connection to Docker working? prereq failed: is the Docker engine running?
+[FAIL] DD0014: are the backend processes running? prereq failed: is the LinuxKit VM running?
+[FAIL] DD0007: is the backend responding? prereq failed: are the backend processes running?
+[FAIL] DD0009: is the vpnkit API responding? prereq failed: are the backend processes running?
+[FAIL] DD0010: is the Docker API proxy responding? prereq failed: are the backend processes running?
+[SKIP] DD0006: is the Docker Desktop Service responding?
+[FAIL] DD0030: is the image access management authorized? prereq failed: is the Docker engine running?
+[PASS] DD0033: does the host have Internet access?
+[PASS] DD0002: does the bootloader have virtualization enabled?
+[PASS] DD0018: does the host support virtualization?
+[WARN] DD0001: is the application running? Docker is not running
+[PASS] DD0022: is the Virtual Machine Platform Windows Feature enabled?
+[PASS] DD0021: is the WSL 2 Windows Feature enabled?
+[PASS] DD0024: is WSL installed?
+[WARN] DD0025: are WSL distros installed? WSL Distribution docker-desktop is missing
+[PASS] DD0026: is the WSL LxssManager service running?
+[WARN] DD0029: is the WSL 2 Linux filesystem corrupt? prereq failed: are WSL distros installed?
+[WARN] DD0035: is the VM time synchronized? prereq failed: are WSL distros installed?
+[WARN] DD0017: can a VM be started? prereq failed: are WSL distros installed?
+[WARN] DD0016: is the LinuxKit VM running? prereq failed: is the application running?
+[WARN] DD0004: is the Docker engine running? prereq failed: is the LinuxKit VM running?
+[PASS] DD0015: are the binary symlinks installed?
+[WARN] DD0031: does the Docker API work? prereq failed: is the Docker engine running?
+[WARN] DD0032: do Docker networks overlap with host IPs? prereq failed: does the Docker API work?
+
+Please note the following 11 warnings:
+
+1 : The check: is the application running?
+    Produced the following warning: Docker is not running
+
+Is the Docker Desktop application running?
+
+2 : The check: are WSL distros installed?
+    Produced the following warning: WSL Distribution docker-desktop is missing
+
+The Docker engine uses several WSL distributions. Therefore these must be installed.
+
+3 : The check: are WSL distros installed?
+    Produced the following warning: WSL Distribution docker-desktop is missing
+
+The Docker engine uses several WSL distributions. Therefore these must be installed.
+
+4 : The check: is the WSL 2 Linux filesystem corrupt?
+    Produced the following warning: prereq failed: are WSL distros installed?
+
+If the WSL 2 Linux filesystem is corrupt then Docker Desktop cannot start.
+There is a known issue fixed in Windows Insider builds which can cause filesystem corruption, see:
+https://github.com/microsoft/WSL/issues/5895 .
+
+Try running "wsl --shutdown" to stop your WSL Virtual Machine. When it restarts it will
+run a filesystem check and hopefully fix the problem.
+
+
+5 : The check: are WSL distros installed?
+    Produced the following warning: WSL Distribution docker-desktop is missing
+
+The Docker engine uses several WSL distributions. Therefore these must be installed.
+
+6 : The check: is the VM time synchronized?
+    Produced the following warning: prereq failed: are WSL distros installed?
+
+The VM time must be in sync with the host, otherwise Docker Desktop will not work correctly.
+
+Ensure you are using a modern WSL 2 kernel (see "wsl --update"). If this problem persists,
+try manually synchronizing the VM clock with "sudo hwclock -s".
+
+7 : The check: can a VM be started?
+    Produced the following warning: prereq failed: are WSL distros installed?
+
+The Docker engine runs inside a Linux VM. Therefore we must be able to start Virtual Machines.
+
+8 : The check: is the LinuxKit VM running?
+    Produced the following warning: prereq failed: is the application running?
+
+The Docker engine runs inside a Linux VM. Therefore the VM must be running.
+
+9 : The check: is the Docker engine running?
+    Produced the following warning: prereq failed: is the LinuxKit VM running?
+
+The Docker engine manages all containers and images on the host. Check the dockerd.log to see why it failed to start.
+
+10 : The check: does the Docker API work?
+    Produced the following warning: prereq failed: is the Docker engine running?
+
+If the Docker API is not available from the host then Docker Desktop will not work correctly.
+
+11 : The check: do Docker networks overlap with host IPs?
+    Produced the following warning: prereq failed: does the Docker API work?
+
+If the subnet used by a Docker network overlaps with an IP used by the host, then containers
+won't be able to contact the overlapping IP addresses.
+
+Try configuring the IP address range used by networks: in your docker-compose.yml.
+See https://docs.docker.com/compose/compose-file/compose-file-v2/#ipv4_address-ipv6_address
+
+
+Please investigate the following 2 issues:
+
+1 : The test: is the application running?
+    Failed with: Docker is not running
+
+Is the Docker Desktop application running?
+
+2 : The test: are WSL distros installed?
+    Failed with: WSL Distribution docker-desktop is missing
+
+The Docker engine uses several WSL distributions. Therefore these must be installed.
